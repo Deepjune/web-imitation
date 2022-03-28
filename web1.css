@@ -130,7 +130,7 @@ a {
     justify-content: center;
 }
 
-.servicebox img {
+.servicebox>ul>li>img {
     width: 60px;
     padding: 5px 40px;
 }
@@ -150,6 +150,14 @@ a {
     color: #e98f00;
     font-size: 14px;
     padding: 10px 50px;
+}
+@media screen and (max-width: 768px){
+    .service ul{
+        flex-wrap: wrap;
+    }
+    .service ul li{
+        width: 50%;
+    }
 }
 
 
