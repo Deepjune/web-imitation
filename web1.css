@@ -2,39 +2,56 @@
     font-family: noto-sans;
     src: url("./Noto_Sans_KR/NotoSansKR-Bold.otf");
 }
+
 * {
     margin: 0;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+}
+
+
 /*menu부분*/
-.menu li img{
+
+.menu li img {
     width: 80%;
 }
-.menu>ul{
+
+.menu>ul {
     display: flex;
     justify-content: center;
 }
-.menu li{
+
+.menu li {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin: 15px 30px;
     font-family: noto-sans;
 }
-.menu li:hover{
+
+.menu li:hover {
     color: #e98f00;
 }
+
+
 /*banner부분*/
-.banner{
+
+.banner {
     overflow: hidden;
     border-top: 2px solid orange;
 }
-.banner-list{
+
+.banner-list {
     width: 200%;
     display: flex;
 }
+
 .banner .banner-item {
     margin: 0;
     width: 1920px;
@@ -43,80 +60,177 @@ ul{
 .banner-item img {
     width: 100%;
 }
+
+
 /*company부분*/
-.company{
+
+.company {
     padding: 100px 10px;
     text-align: center;
 }
-.company h1{
+
+.company h1 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     margin: 0 0 10px;
 }
-.company h2{
+
+.company h2 {
     text-align: center;
     font-weight: 200;
     font-size: 18px;
     margin: 0 0 50px;
 }
-.company h2 span{
+
+.company h2 span {
     color: #e98f00;
     font-family: noto-sans;
 }
-.company p{
+
+.company p {
     text-align: center;
     margin: 0 0 40px 0;
 }
+
+
 /*service부분*/
-.service{
+
+.service {
     padding: 80px 10px;
-    background-image: url(servicebackground.jpg);
+    background-image: url(./img/servicebackground.jpg);
 }
-.service h1{
+
+.service h1 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
-.service>ul{
+
+.service>ul {
     display: flex;
     justify-content: center;
     padding: 0 3PX 0 0;
 }
-.service>ul>li{
+
+.service>ul>li {
     align-items: center;
     display: inline-flex;
     margin: 0 3px 80px 0;
     border-right: 1px solid black;
     padding: 0 8px;
 }
-.service>ul>li:last-child{
+
+.service>ul>li:last-child {
     border-right: none;
 }
-.servicebox ul{
+
+.servicebox ul {
     display: flex;
     justify-content: center;
 }
-.servicebox img{
+
+.servicebox img {
     width: 60px;
     padding: 5px 40px;
 }
-.servicebox li{
+
+.servicebox li {
     border: 1px solid black;
     border-right: none;
     padding: 30px 20px;
     font-size: 20px;
     text-align: center;
 }
-.servicebox li:last-child{
+
+.servicebox li:last-child {
     border-right: 1px solid black;
 }
-.servicebox p{
+
+.servicebox p {
     color: #e98f00;
     font-size: 14px;
     padding: 10px 50px;
 }
+
+
 /*portfolio*/
 
-/*footer*/
+.portfolio {
+    padding: 100px 10px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0 0 50px;
+}
+
+.portfolio h2 span {
+    color: #e98f00;
+    font-family: noto-sans;
+}
+
+.portfolioimg ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.portfolioimg div {
+    padding: 10px 10px 0px;
+}
+
+
+@media screen and (min-width: 768px){
+    .portfolioimg a {
+        width: 24%;
+    }
+    
+.protfolioinformation {
+    width: 100%;
+}
+
+.protfolioinformation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+
+.protfolioinformation li {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.protfolioinformation div {
+    margin: 0 30px;
+}
+
+.protfolioinformation span {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    padding: 5px 0;
+}
+
+.protfolioinformation span:last-child {
+    color: #888;
+}
+
+
+/*contentus*/
+
+.contactus {
+    background-color: #e98f00;
+}
