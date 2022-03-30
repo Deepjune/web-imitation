@@ -254,7 +254,22 @@ a {
     }
 }
 /*contentus*/
-
-.contactus {
-    background-color: #e98f00;
+.contactus{
+    background-color: #EAAB48;
+    padding: 0px 100px;
 }
+.contactus li{
+    margin: 10px;
+}
+.contactus li>input{
+    border-radius: 5px;
+    background: rgba(255,255,255,.3)
+}
+.contactus-notes>ul>li{
+    margin: 30px;
+    border-radius: 5px;
+}
+.contactus-notes>ul>li>textarea{
+    background: rgba(255,255,255,.3)
+}
+/*location*/
