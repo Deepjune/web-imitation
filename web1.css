@@ -258,18 +258,23 @@ a {
     background-color: #EAAB48;
     padding: 0px 100px;
 }
-.contactus li{
-    margin: 10px;
+.contactusdiv ul{
+    width: 33%;
 }
-.contactus li>input{
-    border-radius: 5px;
-    background: rgba(255,255,255,.3)
+.contactus ul input{
+    font-family: noto-sans;
+    background-color: rgba(255,255,255,.3);
 }
-.contactus-notes>ul>li{
-    margin: 30px;
-    border-radius: 5px;
+.contactus ul textarea{
+    font-family: noto-sans;
+    background-color: rgba(255,255,255,.3);
 }
-.contactus-notes>ul>li>textarea{
-    background: rgba(255,255,255,.3)
+
+.contactus ul input::placeholder{
+    color: #fff;
 }
+.contactus ul textarea::placeholder{
+    color: #fff;
+}
+
 /*location*/
