@@ -1,5 +1,5 @@
 @font-face {
-    font-family: noto-sans;
+    font-family: 'noto-sans';
     src: url("./Noto_Sans_KR/NotoSansKR-Bold.otf");
 }
 
@@ -14,9 +14,16 @@ ul {
 a {
     text-decoration: none;
 }
-
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.9;
+    background-color: #fff;
+    border-bottom: 2px solid #e98f00;
+}
 /*menu부분*/
-
 .menu li img {
     width: 80%;
 }
@@ -31,7 +38,7 @@ a {
     justify-content: center;
     align-items: center;
     margin: 15px 30px;
-    font-family: noto-sans;
+    font-family: 'noto-sans';
 }
 
 .menu li:hover {
@@ -43,7 +50,7 @@ a {
 
 .banner {
     overflow: hidden;
-    border-top: 2px solid orange;
+    padding-top: 70px;
 }
 
 .banner-list {
@@ -84,7 +91,7 @@ a {
 
 .company h2 span {
     color: #e98f00;
-    font-family: noto-sans;
+    font-family: 'noto-sans';
 }
 
 .company p {
@@ -185,7 +192,7 @@ a {
 
 .portfolio h2 span {
     color: #e98f00;
-    font-family: noto-sans;
+    font-family: 'noto-sans';
 }
 
 .portfolioimg>ul {
@@ -257,16 +264,20 @@ a {
 .contactus{
     background-color: #EAAB48;
     padding: 0px 100px;
+    width: 1208px;
 }
-.contactusdiv ul{
-    width: 33%;
+.contactus .contactusdiv{
+    display: flex;
+}
+.contactus .contactusdiv .contens-one{
+    width: calc(1208px / 3);
 }
 .contactus ul input{
-    font-family: noto-sans;
+    font-family: 'noto-sans';
     background-color: rgba(255,255,255,.3);
 }
 .contactus ul textarea{
-    font-family: noto-sans;
+    font-family: 'noto-sans';
     background-color: rgba(255,255,255,.3);
 }
 
@@ -278,3 +289,176 @@ a {
 }
 
 /*location*/
+
+.location {
+    padding: 100px 10px;
+}
+.location>.contents{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.location h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.location h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0 0 50px;
+}
+.location h2 span {
+    color: #e98f00;
+    font-family: 'noto-sans';
+}
+.mapdiv>iframe{
+    width: 750px;
+    height: 400px;
+}
+.information>ul{
+    margin-top: 20px;
+}
+.information>ul>li{
+    overflow: hidden;
+    width: 100%;
+}
+
+.information>ul>li>div{
+    display: block;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+    border: none;
+}
+.information>ul>li>div{
+    font-family: Noto Sans;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.information>ul>li{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.information>ul>li>span{
+    color: #EAAB48;
+    width: 5%;
+    padding-right: 10px;
+    display: inline-block;
+    margin: 4px 0 0 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.information>ul>.items{
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+    padding: 10px 0 0 0;
+}
+
+/*notice부분*/
+.notice{
+    background-color: #EAAB48;
+    max-width: 100%;
+    padding: 100px 10px;
+}
+.notice h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.notice h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 0 0 50px;
+}
+.notice h2 span {
+    color: #000;
+    font-family: 'noto-sans';
+}
+.notice .noticeus>.more{
+    text-align: right;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.notice .noticeus>.more>a{
+    color: #fff;
+}
+
+.notice .noticeus ul{
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: small;
+}
+.notice .noticeus ul li{
+    border-bottom: 1px solid #fff;
+    font-size: 13px;
+    padding-bottom: 6px;
+}
+.notice .noticeus ul li a{
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+    width: 100%;
+}
+.notice .noticeus dl{
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+.notice .noticeus dl dt{
+    width: 91%;
+}
+.notice .noticeus dl dt dd{
+    margin: 0;
+    font-family: Arial;
+    color: #fff;
+}
+
+/*footer부분*/
+.footerdiv{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.footerdiv .footericon a{
+    font-size: 20px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 3px;
+}
+.footerdiv .footericon .icon-facebook2{
+    background-color: #3b5999;
+}
+.footerdiv .footericon .icon-twitter{
+    background-color: #00bbf5;
+}
+.footerdiv .footericon .icon-instagram2{
+    background: linear-gradient(45deg, #ffce65 0%,#f91b62 51%,#6b36ee 100%);
+}
+
+.footerdiv .footerlogo{
+    float: left;
+    padding: 30px 0 0 0;
+}
+.footerdiv .footerlogo img{
+    height: 40px;
+}
+.footerdiv .information address{
+    display: flex;
+    flex-wrap: wrap;
+}
