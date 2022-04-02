@@ -219,38 +219,6 @@ header{
 .portfolioimg li>a>div.information>span:last-child {
     color: #888;
 }
-/* 
-.protfolioinformation {
-    width: 100%;
-}
-
-.protfolioinformation ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Malgun Gothic', sans-serif;
-}
-
-
-.protfolioinformation li {
-    margin: 0 20px;
-    text-align: center;
-}
-
-.protfolioinformation div {
-    margin: 0 30px;
-}
-
-.protfolioinformation span {
-    display: block;
-    font-size: 13px;
-    color: #333;
-    padding: 5px 0;
-}
-
-.protfolioinformation span:last-child {
-    color: #888;
-} */
 
 @media screen and (max-width: 768px){
     .portfolioimg ul {
@@ -263,14 +231,12 @@ header{
 /*contentus*/
 .contactus{
     background-color: #EAAB48;
-    padding: 0px 100px;
-    width: 1208px;
+    padding: 100px 100px;
+    /* width: 100%; */
 }
 .contactus .contactusdiv{
     display: flex;
-}
-.contactus .contactusdiv .contens-one{
-    width: calc(1208px / 3);
+    justify-content: center;
 }
 .contactus ul input{
     font-family: 'noto-sans';
@@ -280,11 +246,55 @@ header{
     font-family: 'noto-sans';
     background-color: rgba(255,255,255,.3);
 }
-
+.contactus .submit{
+    border-radius: 4px;
+    background-color: #FFD802;
+    margin: 5px 15px;
+    width: 200px;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+}
+.contactus .submit a{
+    color: #000;
+    font-weight: bold;
+}
+.contactus .submit span{
+    display: block;
+    color: #000;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px -5px 20px;
+    line-height: 60px;
+}
+.contactus .contactusdiv li input{
+    border-radius: 4px;
+    border: none;
+    padding: 5px 210px 5px 10px;
+    margin: 5px 0;
+    height: 40px;
+}
+.contactusdiv .note li textarea{
+    border: none;
+    border-radius: 4px;
+    padding-right: 150px;
+    margin: 5px 0;
+    height: 225px;
+}
+.contactus .check{
+    display: flex;
+    justify-content:center;
+    padding-right: 700px;
+}
 .contactus ul input::placeholder{
     color: #fff;
 }
 .contactus ul textarea::placeholder{
+    padding: 10px;
     color: #fff;
 }
 
@@ -319,7 +329,7 @@ header{
     width: 750px;
     height: 400px;
 }
-.information>ul{
+.location .information>ul{
     margin-top: 20px;
 }
 .information>ul>li{
@@ -391,6 +401,8 @@ header{
     text-align: right;
     max-width: 700px;
     margin: 0 auto;
+    font-weight: bold;
+    font-size: small;
 }
 .notice .noticeus>.more>a{
     color: #fff;
@@ -427,12 +439,19 @@ header{
 }
 
 /*footer부분*/
+
 .footerdiv{
     width: 1100px;
-    max-width: 100%;
     margin: 0 auto;
-    overflow: hidden;
-    padding: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    position: relative;
+}
+.footerdiv .footericon{
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-top: 0;
 }
 .footerdiv .footericon a{
     font-size: 20px;
@@ -450,15 +469,36 @@ header{
 .footerdiv .footericon .icon-instagram2{
     background: linear-gradient(45deg, #ffce65 0%,#f91b62 51%,#6b36ee 100%);
 }
-
 .footerdiv .footerlogo{
-    float: left;
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
 }
 .footerdiv .footerlogo img{
     height: 40px;
 }
-.footerdiv .information address{
-    display: flex;
-    flex-wrap: wrap;
+.footerdiv .information{
+    padding: 15x;
+}
+.footerdiv .information ul{
+    padding: 2px 0 0 40px;
+}
+.footerdiv .information .address li{
+    display: inline;
+    padding: 0 2px;
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+
+.footerdiv .information .business li{
+    display: inline;
+    padding: 0 2px;
+    font-size: 12px;
+    color: #999;
+    text-align: left;
+}
+.footerdiv .copyright{
+    padding: 0 2px;
+    font-size: 12px;
+    color: #999;
+    text-align: left;
 }
